@@ -43,7 +43,8 @@ class _ChatPageState extends BaseChatState<ChatPage> {
 
   @override
   Future editAndUpload(Uint8List data) async {
-    var edited = await Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) {
+    var edited = await Navigator.of(context)
+        .push(MaterialPageRoute(builder: (BuildContext context) {
       return DrawPage(imageData: data, loadingWidget: loadingWidget);
     }));
     sendImage(edited);
@@ -60,10 +61,11 @@ class _ChatPageState extends BaseChatState<ChatPage> {
     //   }
     // } else {
 
-    images = await Navigator.of(context)
-        .push<List<Uint8List>>(MaterialPageRoute(builder: (BuildContext context) => CameraPage()));
+    images = await Navigator.of(context).push<List<Uint8List>>(
+        MaterialPageRoute(builder: (BuildContext context) => CameraPage()));
     if (images != null && images.length == 1) {
-      var image = await Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) {
+      var image = await Navigator.of(context)
+          .push(MaterialPageRoute(builder: (BuildContext context) {
         return DrawPage(imageData: images[0], loadingWidget: loadingWidget);
       }));
       if (image == null) return null;

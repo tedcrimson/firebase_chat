@@ -1,21 +1,17 @@
 import 'dart:async';
 
 import 'dart:typed_data';
-
-import 'package:firebase_chat/chat/activity_repository.dart';
-import 'package:firebase_chat/chat/typing_section.dart';
-
+import 'package:firebase_chat/cubit/chat_input_cubit.dart';
 import 'package:firebase_chat/models.dart';
-import 'package:firebase_chat/chat/chat_content.dart';
-
+import 'package:firebase_chat/presentation/widgets/chat_content.dart';
+import 'package:firebase_chat/presentation/widgets/typing/typing_section.dart';
+import 'package:firebase_chat/repositories/activity_repository.dart';
 import 'package:firestore_repository/firestore_repository.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gallery_previewer/gallery_previewer.dart';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'blocs/input/chat_input_cubit.dart';
 
 abstract class BaseChat extends StatefulWidget {
   // final ActivityRepository activityRepository;
@@ -38,7 +34,8 @@ abstract class BaseChatState<T extends BaseChat> extends State<BaseChat> {
   final ScrollController listScrollController = new ScrollController();
   int messageLimit = 20;
   Query query;
-  final TextEditingController textEditingController = new TextEditingController();
+  final TextEditingController textEditingController =
+      new TextEditingController();
 
   ChatInputCubit _chatInputCubit;
   // String userId;
@@ -74,12 +71,14 @@ abstract class BaseChatState<T extends BaseChat> extends State<BaseChat> {
     } catch (e) {
       fire = FirestoreRepository();
     }
-    query = fire
-        .getQuery([...entity.path.split('/'), 'Activity'], limit: messageLimit).orderBy('timestamp', descending: true);
+    query = fire.getQuery([...entity.path.split('/'), 'Activity'],
+        limit: messageLimit).orderBy('timestamp', descending: true);
 
     images = new List<GalleryViewItem>();
 
-    _imagesSubscription = activityRepository.getChatImages(activityRepository.reference).listen((onData) {
+    _imagesSubscription = activityRepository
+        .getChatImages(activityRepository.reference)
+        .listen((onData) {
       bool init = onData.docChanges.length > 1;
       for (var snap in onData.docChanges) {
         switch (snap.type) {
@@ -198,7 +197,8 @@ abstract class BaseChatState<T extends BaseChat> extends State<BaseChat> {
   Color get secondaryColor;
 
   Widget _buildInput() {
-    return BlocBuilder<ChatInputCubit, ChatInputState>(cubit: _chatInputCubit, builder: inputBuilder);
+    return BlocBuilder<ChatInputCubit, ChatInputState>(
+        cubit: _chatInputCubit, builder: inputBuilder);
   }
 
   Widget inputBuilder(BuildContext context, ChatInputState state);

@@ -9,6 +9,9 @@ class PeerUser {
 
   factory PeerUser.fromSnapshot(DocumentSnapshot snap) {
     var data = snap.data();
-    return PeerUser(id: snap.id, image: data['image'], name: data['firstName'] + " " + data['lastName']);
+    return PeerUser(
+        id: snap.id,
+        image: data['image'],
+        name: data['firstName'] + " " + data['lastName']);
   }
 }

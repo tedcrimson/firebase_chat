@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 
 class Converter {
   static Widget convertToImage(String url,
-      {double size, Widget placeHolder, BoxFit fit = BoxFit.cover, Color backgroundColor = Colors.white}) {
+      {double size,
+      Widget placeHolder,
+      BoxFit fit = BoxFit.cover,
+      Color backgroundColor = Colors.white}) {
     if (placeHolder == null)
       placeHolder = Container(
         color: backgroundColor,

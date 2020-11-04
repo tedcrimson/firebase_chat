@@ -7,7 +7,9 @@ import 'package:firestore_repository/firestore_repository.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class ActivityRepository {
-  ActivityRepository(this.path, {FirestoreRepository firestoreRepository, FirebaseStorageRepository storageRepository})
+  ActivityRepository(this.path,
+      {FirestoreRepository firestoreRepository,
+      FirebaseStorageRepository storageRepository})
       : _firestoreRepository = firestoreRepository ?? FirestoreRepository(),
         _storageRepository = storageRepository ?? FirebaseStorageRepository();
 
@@ -31,7 +33,8 @@ class ActivityRepository {
     );
   }
 
-  Future<void> addActivity(DocumentReference activityReference, ActivityLog activityLog) {
+  Future<void> addActivity(
+      DocumentReference activityReference, ActivityLog activityLog) {
     var json = activityLog.toJson();
 
     activityReference.set(json).whenComplete(() {
@@ -40,7 +43,8 @@ class ActivityRepository {
     return reference.update({'lastMessage': activityReference});
   }
 
-  Future<void> changeSeenStatus(String userId, String path, int seenStatus) async {
+  Future<void> changeSeenStatus(
+      String userId, String path, int seenStatus) async {
     if (path != null)
       return _firestoreRepository.firestore.runTransaction((transaction) async {
         var documentReference = _firestoreRepository.doc(path);
@@ -61,7 +65,8 @@ class ActivityRepository {
   }
 
   Future<String> uploadData(String fileName, Uint8List image) async {
-    var task = await _storageRepository.uploadByteData(['ChatPictures', fileName], image);
+    var task = await _storageRepository
+        .uploadByteData(['ChatPictures', fileName], image);
     return await task.ref.getDownloadURL();
   }
 

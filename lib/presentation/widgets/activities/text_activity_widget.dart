@@ -4,7 +4,8 @@ import 'package:firebase_chat/models.dart';
 class TextActivityWidget extends StatelessWidget {
   final TextActivity textActivity;
   final bool isMe;
-  const TextActivityWidget({Key key, this.textActivity, this.isMe}) : super(key: key);
+  const TextActivityWidget({Key key, this.textActivity, this.isMe})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +17,8 @@ class TextActivityWidget extends StatelessWidget {
         child: Text(
           textActivity.text,
           textAlign: TextAlign.left,
-          style: TextStyle(fontSize: 16, color: isMe ? Colors.white : Colors.black),
+          style: TextStyle(
+              fontSize: 16, color: isMe ? Colors.white : Colors.black),
         ),
       );
     });

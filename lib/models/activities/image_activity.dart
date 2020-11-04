@@ -4,7 +4,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 class ImageActivity extends ActivityLog {
   String imagePath;
   String thumbPath;
-  ImageActivity.fromSnapshot(DocumentSnapshot snapshot) : super.fromSnapshot(snapshot) {
+  ImageActivity.fromSnapshot(DocumentSnapshot snapshot)
+      : super.fromSnapshot(snapshot) {
     imagePath = snapshot.data()['imagePath'];
     thumbPath = snapshot.data()['thumbPath'];
   }

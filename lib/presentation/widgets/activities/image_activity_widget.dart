@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:firebase_chat/models.dart';
-import 'package:firebase_chat/chat/base_chat_page.dart';
+import 'package:firebase_chat/presentation/base_chat_page.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:gallery_previewer/gallery_previewer.dart';

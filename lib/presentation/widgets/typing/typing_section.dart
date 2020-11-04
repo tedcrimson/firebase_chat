@@ -1,8 +1,7 @@
 import 'dart:async';
-
-import 'package:firebase_chat/chat/activity_repository.dart';
-import 'package:firebase_chat/chat/typing_widget.dart';
 import 'package:firebase_chat/models/peer_user.dart';
+import 'package:firebase_chat/presentation/widgets/typing/typing_widget.dart';
+import 'package:firebase_chat/repositories/activity_repository.dart';
 import 'package:flutter/material.dart';
 
 class TypingSection extends StatefulWidget {
@@ -26,13 +25,16 @@ class _TypingSectionState extends State<TypingSection> {
 
   @override
   void initState() {
-    _typingSubscription = widget.activityRepository.reference.snapshots().listen((onData) {
+    _typingSubscription =
+        widget.activityRepository.reference.snapshots().listen((onData) {
       var data = onData.data();
       if (onData.exists) {
         var typing = data['typing'];
         if (typing != null) {
           setState(() {
-            typingPeers = typing.keys.where((element) => typing[element] == true).toList();
+            typingPeers = typing.keys
+                .where((element) => typing[element] == true)
+                .toList();
           });
         }
       }

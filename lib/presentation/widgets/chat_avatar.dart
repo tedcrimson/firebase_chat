@@ -5,7 +5,8 @@ class ChatAvatar extends StatelessWidget {
   final bool showAvatar;
   final PeerUser peer;
   final Widget userImage;
-  const ChatAvatar({Key key, this.showAvatar, this.peer, this.userImage}) : super(key: key);
+  const ChatAvatar({Key key, this.showAvatar, this.peer, this.userImage})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

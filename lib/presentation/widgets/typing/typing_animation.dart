@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
 class DelayTween extends Tween<double> {
-  DelayTween({double begin, double end, this.delay}) : super(begin: begin, end: end);
+  DelayTween({double begin, double end, this.delay})
+      : super(begin: begin, end: end);
 
   final double delay;
 
   @override
-  double lerp(double t) => super.lerp((math.sin((t - delay) * 2 * math.pi) + 1) / 2);
+  double lerp(double t) =>
+      super.lerp((math.sin((t - delay) * 2 * math.pi) + 1) / 2);
 
   @override
   double evaluate(Animation<double> animation) => lerp(animation.value);
@@ -21,7 +23,8 @@ class TypingAnimation extends StatefulWidget {
   _TypingAnimationState createState() => _TypingAnimationState();
 }
 
-class _TypingAnimationState extends State<TypingAnimation> with SingleTickerProviderStateMixin {
+class _TypingAnimationState extends State<TypingAnimation>
+    with SingleTickerProviderStateMixin {
   AnimationController _controller;
   double size = 25.0;
   int length = 3;
@@ -34,7 +37,9 @@ class _TypingAnimationState extends State<TypingAnimation> with SingleTickerProv
 
     color = widget.color ?? Colors.blue;
 
-    _controller = AnimationController(vsync: this, duration: Duration(milliseconds: 1500))..repeat();
+    _controller =
+        AnimationController(vsync: this, duration: Duration(milliseconds: 1500))
+          ..repeat();
   }
 
   @override
@@ -52,7 +57,8 @@ class _TypingAnimationState extends State<TypingAnimation> with SingleTickerProv
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: List.generate(length, (i) {
           return ScaleTransition(
-            scale: DelayTween(begin: 0.5, end: 0.8, delay: i * .15).animate(_controller),
+            scale: DelayTween(begin: 0.5, end: 0.8, delay: i * .15)
+                .animate(_controller),
             child: SizedBox.fromSize(
               size: Size.square(size / 2),
               child: DecoratedBox(

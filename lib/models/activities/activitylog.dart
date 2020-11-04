@@ -38,7 +38,10 @@ class ActivityLog {
     path = snapshot.reference.path;
   }
 
-  ActivityLog({@required this.activityStatus, @required this.userId, String documentId}) {
+  ActivityLog(
+      {@required this.activityStatus,
+      @required this.userId,
+      String documentId}) {
     this.documentId = documentId;
     this.seenStatus = SeenStatus.Sent;
     this.seenBy = [];
