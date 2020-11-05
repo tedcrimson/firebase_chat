@@ -1,15 +1,16 @@
+import 'dart:io' as io;
+import 'dart:html' as html;
 import 'dart:typed_data';
 
 import 'package:firebase_chat/models.dart';
 import 'package:firebase_storage_repository/firebase_storage_repository.dart';
 import 'package:firestore_repository/firestore_repository.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class ActivityRepository {
-  ActivityRepository(this.path,
-      {FirestoreRepository firestoreRepository,
-      FirebaseStorageRepository storageRepository})
+  ActivityRepository(this.path, {FirestoreRepository firestoreRepository, FirebaseStorageRepository storageRepository})
       : _firestoreRepository = firestoreRepository ?? FirestoreRepository(),
         _storageRepository = storageRepository ?? FirebaseStorageRepository();
 
@@ -33,8 +34,7 @@ class ActivityRepository {
     );
   }
 
-  Future<void> addActivity(
-      DocumentReference activityReference, ActivityLog activityLog) {
+  Future<void> addActivity(DocumentReference activityReference, ActivityLog activityLog) {
     var json = activityLog.toJson();
 
     activityReference.set(json).whenComplete(() {
@@ -43,8 +43,7 @@ class ActivityRepository {
     return reference.update({'lastMessage': activityReference});
   }
 
-  Future<void> changeSeenStatus(
-      String userId, String path, int seenStatus) async {
+  Future<void> changeSeenStatus(String userId, String path, int seenStatus) async {
     if (path != null)
       return _firestoreRepository.firestore.runTransaction((transaction) async {
         var documentReference = _firestoreRepository.doc(path);
@@ -64,10 +63,19 @@ class ActivityRepository {
     // });
   }
 
-  Future<String> uploadData(String fileName, Uint8List image) async {
-    var task = await _storageRepository
-        .uploadByteData(['ChatPictures', fileName], image);
-    return await task.ref.getDownloadURL();
+  Future<String> uploadData(String fileName, dynamic image) async {
+    UploadTask task;
+    if (image is Uint8List)
+      task = _storageRepository.uploadByteData(['ChatPictures', fileName], image);
+    else if (image is io.File) {
+      task = _storageRepository.uploadFile(['ChatPictures', fileName], image);
+    } else if (image is html.File) {
+      task = _storageRepository.uploadBlob(['ChatPictures', fileName], image);
+    }
+    if (task == null) return null;
+
+    var t = await task;
+    return await t.ref.getDownloadURL();
   }
 
   Stream<QuerySnapshot> getChatImages(DocumentReference proposalReference) {

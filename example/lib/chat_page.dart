@@ -1,6 +1,8 @@
+import 'dart:convert';
 import 'dart:typed_data';
-
+import 'dart:html' as html;
 import 'package:draw_page/draw_page.dart';
+import 'package:file_picker_web/file_picker_web.dart';
 import 'package:firebase_chat/firebase_chat.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -43,33 +45,52 @@ class _ChatPageState extends BaseChatState<ChatPage> {
 
   @override
   Future editAndUpload(Uint8List data) async {
-    var edited = await Navigator.of(context)
-        .push(MaterialPageRoute(builder: (BuildContext context) {
+    var edited = await Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) {
       return DrawPage(imageData: data, loadingWidget: loadingWidget);
     }));
     sendImage(edited);
   }
 
+  Future<Uint8List> _getHtmlFileContent(html.File blob) async {
+    Uint8List file;
+    final reader = html.FileReader();
+    reader.readAsDataUrl(blob.slice(0, blob.size, blob.type));
+    reader.onLoadEnd.listen((event) {
+      Uint8List data = Base64Decoder().convert(reader.result.toString().split(",").last);
+      file = data;
+    }).onData((data) {
+      file = Base64Decoder().convert(reader.result.toString().split(",").last);
+      return file;
+    });
+    while (file == null) {
+      await new Future.delayed(const Duration(milliseconds: 1));
+      if (file != null) {
+        break;
+      }
+    }
+    return file;
+  }
+
   @override
   Future getImage() async {
-    List<Uint8List> images;
-    // if (kIsWeb) {
-    //   PickedFile imageFile = await ImagePicker().getImage(source: ImageSource.gallery);
-    //   if (imageFile != null) {
-    //     var image = await imageFile.readAsBytes();
-    //     images = [image];
-    //   }
-    // } else {
+    List images;
+    if (kIsWeb) {
+      var file = await FilePicker.getFile();
 
-    images = await Navigator.of(context).push<List<Uint8List>>(
-        MaterialPageRoute(builder: (BuildContext context) => CameraPage()));
-    if (images != null && images.length == 1) {
-      var image = await Navigator.of(context)
-          .push(MaterialPageRoute(builder: (BuildContext context) {
-        return DrawPage(imageData: images[0], loadingWidget: loadingWidget);
-      }));
-      if (image == null) return null;
-      images = [image];
+      if (file != null) {
+        var g = await _getHtmlFileContent(file);
+        images = [g];
+      }
+    } else {
+      images = await Navigator.of(context)
+          .push<List<Uint8List>>(MaterialPageRoute(builder: (BuildContext context) => CameraPage()));
+      if (images != null && images.length == 1) {
+        var image = await Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) {
+          return DrawPage(imageData: images[0], loadingWidget: loadingWidget);
+        }));
+        if (image == null) return null;
+        images = [image];
+      }
     }
 
     if (images != null) {
@@ -109,7 +130,7 @@ class _ChatPageState extends BaseChatState<ChatPage> {
                 ),
               ),
             ),
-            if (state is InputEmptyState && !kIsWeb) // doesn't support web yet
+            if (state is InputEmptyState && !kIsWeb) //doesnt support web yet
               Material(
                 child: new Container(
                   child: new IconButton(

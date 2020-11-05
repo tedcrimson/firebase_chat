@@ -34,18 +34,18 @@ class ChatInputCubit extends Cubit<ChatInputState> {
 
       activityRepository.setTyping(userId, false);
     } else {
-      if (!(state is ReadyToSendState))
-        activityRepository.setTyping(userId, true);
+      if (!(state is ReadyToSendState)) activityRepository.setTyping(userId, true);
       emit(ReadyToSendState(input));
     }
   }
 
-  Future<bool> sendImage(Uint8List imageFile) async {
+  Future<bool> sendImage(dynamic imageFile) async {
     if (imageFile == null) return false;
     var docReference = activityRepository.createActivityReference();
     var fileName = docReference.path.replaceAll(new RegExp(r'/'), '!');
 
-    var url = await activityRepository.uploadData(fileName, imageFile);
+    String url = await activityRepository.uploadData(fileName, imageFile);
+    if (url == null) return false;
     var activity = ImageActivity(userId: userId, imagePath: url);
     await activityRepository.addActivity(docReference, activity);
     return true;
@@ -65,8 +65,7 @@ class ChatInputCubit extends Cubit<ChatInputState> {
       activityRepository.addActivity(docReference, activity);
 
       if (scrollController != null)
-        scrollController.animateTo(0.0,
-            duration: Duration(milliseconds: 300), curve: Curves.easeOut);
+        scrollController.animateTo(0.0, duration: Duration(milliseconds: 300), curve: Curves.easeOut);
     }
   }
 }

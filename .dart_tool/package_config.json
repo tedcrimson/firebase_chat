@@ -117,19 +117,25 @@
     },
     {
       "name": "firebase_storage",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage-4.0.1",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage-5.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "firebase_storage_platform_interface",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage_platform_interface-1.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.0"
     },
     {
       "name": "firebase_storage_repository",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/git/packages-200e209e1d6389cbcc9630a4444d0bd3ee934bfd/firebase_storage_repository",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage_repository-0.0.2+1",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     },
     {
       "name": "firestore_repository",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/git/packages-200e209e1d6389cbcc9630a4444d0bd3ee934bfd/firestore_repository",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firestore_repository-0.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     },
@@ -171,7 +177,7 @@
     },
     {
       "name": "gallery_previewer",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/git/packages-bfb5c0e0e663f4b8bf503fee66b89afa2f2ca044/gallery_previewer",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/gallery_previewer-0.0.1+1",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     },
@@ -231,7 +237,7 @@
     },
     {
       "name": "path_provider",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-1.6.22",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-1.6.24",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
@@ -243,19 +249,19 @@
     },
     {
       "name": "path_provider_macos",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-0.0.4+4",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-0.0.4+6",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
     {
       "name": "path_provider_platform_interface",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_platform_interface-1.0.3",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_platform_interface-1.0.4",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
     {
       "name": "path_provider_windows",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-0.0.4+1",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-0.0.4+3",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
@@ -368,12 +374,6 @@
       "languageVersion": "2.10"
     },
     {
-      "name": "user_repository",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/git/packages-b8e355e1aaa74b885c5eb973f0cd3ba4dfae68c4/user_repository",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
       "name": "uuid",
       "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/uuid-2.2.2",
       "packageUri": "lib/",
@@ -404,7 +404,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2020-11-04T15:23:24.034020Z",
+  "generated": "2020-11-05T17:02:40.116439Z",
   "generator": "pub",
   "generatorVersion": "2.11.0-186.0.dev"
 }
