@@ -34,7 +34,8 @@ class ChatInputCubit extends Cubit<ChatInputState> {
 
       activityRepository.setTyping(userId, false);
     } else {
-      if (!(state is ReadyToSendState)) activityRepository.setTyping(userId, true);
+      if (!(state is ReadyToSendState))
+        activityRepository.setTyping(userId, true);
       emit(ReadyToSendState(input));
     }
   }
@@ -65,7 +66,8 @@ class ChatInputCubit extends Cubit<ChatInputState> {
       activityRepository.addActivity(docReference, activity);
 
       if (scrollController != null)
-        scrollController.animateTo(0.0, duration: Duration(milliseconds: 300), curve: Curves.easeOut);
+        scrollController.animateTo(0.0,
+            duration: Duration(milliseconds: 300), curve: Curves.easeOut);
     }
   }
 }

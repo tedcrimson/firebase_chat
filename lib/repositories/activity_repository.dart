@@ -5,7 +5,6 @@ import 'dart:typed_data';
 import 'package:firebase_chat/models.dart';
 import 'package:firebase_storage_repository/firebase_storage_repository.dart';
 import 'package:firestore_repository/firestore_repository.dart';
-import 'package:firebase_storage/firebase_storage.dart';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 
@@ -64,7 +63,7 @@ class ActivityRepository {
   }
 
   Future<String> uploadData(String fileName, dynamic image) async {
-    UploadTask task;
+    var task;
     if (image is Uint8List)
       task = _storageRepository.uploadByteData(['ChatPictures', fileName], image);
     else if (image is io.File) {
@@ -83,6 +82,6 @@ class ActivityRepository {
         .collection('Activity')
         .where("activityStatus", isEqualTo: ActivityStatus.Image)
         .orderBy('timestamp', descending: true)
-        .snapshots(); //DEBUG: asd
+        .snapshots(); //FIXME:
   }
 }

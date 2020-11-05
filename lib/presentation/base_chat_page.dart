@@ -34,7 +34,8 @@ abstract class BaseChatState<T extends BaseChat> extends State<BaseChat> {
   final ScrollController listScrollController = new ScrollController();
   int messageLimit = 20;
   Query query;
-  final TextEditingController textEditingController = new TextEditingController();
+  final TextEditingController textEditingController =
+      new TextEditingController();
 
   ChatInputCubit _chatInputCubit;
   // String userId;
@@ -70,12 +71,14 @@ abstract class BaseChatState<T extends BaseChat> extends State<BaseChat> {
     } catch (e) {
       fire = FirestoreRepository();
     }
-    query = fire
-        .getQuery([...entity.path.split('/'), 'Activity'], limit: messageLimit).orderBy('timestamp', descending: true);
+    query = fire.getQuery([...entity.path.split('/'), 'Activity'],
+        limit: messageLimit).orderBy('timestamp', descending: true);
 
     images = new List<GalleryViewItem>();
 
-    _imagesSubscription = activityRepository.getChatImages(activityRepository.reference).listen((onData) {
+    _imagesSubscription = activityRepository
+        .getChatImages(activityRepository.reference)
+        .listen((onData) {
       bool init = onData.docChanges.length > 1;
       for (var snap in onData.docChanges) {
         switch (snap.type) {
@@ -194,7 +197,8 @@ abstract class BaseChatState<T extends BaseChat> extends State<BaseChat> {
   Color get secondaryColor;
 
   Widget _buildInput() {
-    return BlocBuilder<ChatInputCubit, ChatInputState>(cubit: _chatInputCubit, builder: inputBuilder);
+    return BlocBuilder<ChatInputCubit, ChatInputState>(
+        cubit: _chatInputCubit, builder: inputBuilder);
   }
 
   Widget inputBuilder(BuildContext context, ChatInputState state);
