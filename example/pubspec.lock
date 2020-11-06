@@ -148,20 +148,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "5.2.1"
-  file_picker_platform_interface:
-    dependency: transitive
-    description:
-      name: file_picker_platform_interface
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.0.0"
-  file_picker_web:
-    dependency: "direct main"
-    description:
-      name: file_picker_web
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.0.0"
   firebase:
     dependency: transitive
     description:
@@ -175,7 +161,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "0.0.2"
+    version: "0.0.2+2"
   firebase_core:
     dependency: transitive
     description:
