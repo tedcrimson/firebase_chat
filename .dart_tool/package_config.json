@@ -404,7 +404,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2020-11-06T09:52:06.059439Z",
+  "generated": "2020-11-08T12:56:07.551063Z",
   "generator": "pub",
-  "generatorVersion": "2.11.0-186.0.dev"
+  "generatorVersion": "2.10.3"
 }

@@ -1,6 +1,6 @@
 name: firebase_chat
 description: Fully functional package for Cloud Firestore that makes easier to implement chat in your application
-version: 0.0.2+2
+version: 0.0.2+5
 homepage: https://github.com/tedcrimson/firebase_chat
 
 environment:

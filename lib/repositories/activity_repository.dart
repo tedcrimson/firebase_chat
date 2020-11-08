@@ -1,5 +1,4 @@
 import 'dart:io' as io;
-import 'dart:html' as html;
 import 'dart:typed_data';
 
 import 'package:firebase_chat/models.dart';
@@ -73,10 +72,11 @@ class ActivityRepository {
           _storageRepository.uploadByteData(['ChatPictures', fileName], image);
     else if (image is io.File) {
       task = _storageRepository.uploadFile(['ChatPictures', fileName], image);
-    } else if (image is html.File) {
+    } // else if (image is Blob) {
+    else
       task = _storageRepository.uploadBlob(['ChatPictures', fileName], image);
-    }
-    if (task == null) return null;
+    // }
+    // if (task == null) return null;
 
     var t = await task;
     return await t.ref.getDownloadURL();

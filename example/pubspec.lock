@@ -161,7 +161,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "0.0.2+2"
+    version: "0.0.2+5"
   firebase_core:
     dependency: transitive
     description:
@@ -454,7 +454,7 @@ packages:
       name: stack_trace
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.10.0-nullsafety.2"
+    version: "1.10.0-nullsafety.1"
   stream_channel:
     dependency: transitive
     description:
@@ -526,5 +526,5 @@ packages:
     source: hosted
     version: "0.1.2"
 sdks:
-  dart: ">=2.10.2 <=2.11.0-186.0.dev"
+  dart: ">=2.10.2 <2.11.0"
   flutter: ">=1.22.2 <2.0.0"
