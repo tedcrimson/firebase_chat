@@ -39,9 +39,9 @@ packages:
   camera_capture:
     dependency: "direct main"
     description:
-      path: "../../camera_capture"
-      relative: true
-    source: path
+      name: camera_capture
+      url: "https://pub.dartlang.org"
+    source: hosted
     version: "0.0.1"
   characters:
     dependency: transitive
@@ -106,13 +106,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.5"
-  cupertino_icons:
-    dependency: "direct main"
-    description:
-      name: cupertino_icons
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.0"
   draw_page:
     dependency: "direct main"
     description:
@@ -222,7 +215,7 @@ packages:
       name: flutter_bloc
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "6.0.6"
+    version: "6.1.0"
   flutter_blurhash:
     dependency: transitive
     description:

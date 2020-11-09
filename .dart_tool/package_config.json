@@ -147,7 +147,7 @@
     },
     {
       "name": "flutter_bloc",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_bloc-6.0.6",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_bloc-6.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.6"
     },
@@ -404,7 +404,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2020-11-08T12:56:07.551063Z",
+  "generated": "2020-11-09T16:32:21.887347Z",
   "generator": "pub",
   "generatorVersion": "2.10.3"
 }

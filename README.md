@@ -1,14 +1,13 @@
-# firebase_chat
+# Firebase Chat 🔥💬
 
-A new Flutter package project.
 
-## Getting Started
+## ⛏️ Getting started
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+To get started with Firebase, please see the documentation available at https://firebase.flutter.dev/docs/overview
+
+Add **Firebase Chat** to your project by following the instructions on the 
+**[install page](https://pub.dev/packages/firebase_chat/install)** and start using it:
+```dart
+import 'package:firebase_chat/firebase_chat.dart';
+```
