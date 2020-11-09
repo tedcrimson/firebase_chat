@@ -1,3 +1,4 @@
+## [0.0.2+6] - changed readme
 ## [0.0.2+5] - fixes
 ## [0.0.2+4] - html fix
 ## [0.0.2+3] - minor fixes
