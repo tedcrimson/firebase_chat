@@ -1,6 +1,6 @@
 # Firebase Chat🔥💬
 
-![](resources/preview.gif)
+![](https://raw.githubusercontent.com/tedcrimson/firebase_chat/master/resources/preview.gif)
 
 ## ⛏️ Getting started
 
