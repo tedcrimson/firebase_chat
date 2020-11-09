@@ -44,8 +44,12 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   Map<String, PeerUser> peers = {
-    'myId': PeerUser(id: 'myId', name: 'User1'),
-    'otherId': PeerUser(id: 'otherId', name: 'User2'),
+    'myId': PeerUser(id: 'myId', name: 'Grievous'),
+    'otherId': PeerUser(
+        id: 'otherId',
+        name: 'Kenobi',
+        image:
+            'https://cdn.vox-cdn.com/thumbor/SRwHbaTMxPr4f8EJdfai_UR2y34=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/6434955/obi-wan.0.jpg'),
   };
   @override
   Widget build(BuildContext context) {

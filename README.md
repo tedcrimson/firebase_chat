@@ -1,5 +1,6 @@
 # Firebase Chat🔥💬
 
+![](resources/preview.gif)
 
 ## ⛏️ Getting started
 
@@ -29,15 +30,15 @@ class _ChatPageState extends BaseChatState<ChatPage> {
 ### Override Methods and Properties
 > You can checkout [example file](https://pub.dev/packages/firebase_chat/example)
 ```dart
-    Widget inputBuilder(BuildContext context, ChatInputState state);
-    Future editAndUpload(Uint8List data);
-    Future getImage();
-    
-    Widget get emptyWidget;
-    Widget get errorWidget;
-    Widget get loadingWidget;
-    Color  get primaryColor;
-    Color  get secondaryColor;
+Widget inputBuilder(BuildContext context, ChatInputState state);
+Future editAndUpload(Uint8List data);
+Future getImage();
+
+Widget get emptyWidget;
+Widget get errorWidget;
+Widget get loadingWidget;
+Color  get primaryColor;
+Color  get secondaryColor;
 ```
 
 ## Models 📦
@@ -56,6 +57,8 @@ class _ChatPageState extends BaseChatState<ChatPage> {
 * `peers` - Map of users `<user ID, PeerUser>`
 * `lastMessage` - last sent message
 * `title` - name of the chat (You can name group chats, can be `nullable`)
+
+
 
 
 ## License ⚖️
