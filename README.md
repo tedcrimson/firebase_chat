@@ -65,4 +65,4 @@ Color  get secondaryColor;
 - [MIT](https://github.com/tedcrimson/firebase_chat/blob/master/LICENSE)
 
 ## Issues and feedback 💭
-If you have any suggestion for including a feature or if something doesn't work, feel free to open a Github [issue](https://github.com/fayeed/dash_chat/issues) for us to have a discussion on it.
+If you have any suggestion for including a feature or if something doesn't work, feel free to open a Github [issue](https://github.com/tedcrimson/firebase_chat/issues) for us to have a discussion on it.
