@@ -1,3 +1,4 @@
+## [0.0.2+8] - changed pagination
 ## [0.0.2+7] - changed readme
 ## [0.0.2+5] - fixes
 ## [0.0.2+4] - html fix
