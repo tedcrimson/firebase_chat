@@ -48,7 +48,8 @@ class ChatActivityWidget extends StatelessWidget {
 
     // print("OLA");
     if (!isMe && !activityLog.seenBy.contains(userId)) {
-      activityRepository.changeSeenStatus(userId, activityLog.path, SeenStatus.Seen);
+      activityRepository.changeSeenStatus(
+          userId, activityLog.path, SeenStatus.Seen);
     }
 
     return Column(
@@ -61,25 +62,44 @@ class ChatActivityWidget extends StatelessWidget {
               bottom: isMe && isLastMessageRight(index) ? 20.0 : 2.0,
             ),
             child: Row(
-                mainAxisAlignment: isMe ? MainAxisAlignment.end : MainAxisAlignment.start,
+                mainAxisAlignment:
+                    isMe ? MainAxisAlignment.end : MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 // mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   //avatar
                   ChatAvatar(
-                    showAvatar:
-                        !isMe && (index == 0 || listMessage[max(0, index - 1)].userId != listMessage[index].userId),
+                    showAvatar: !isMe &&
+                        (index == 0 ||
+                            listMessage[max(0, index - 1)].userId !=
+                                listMessage[index].userId),
                     peer: peer,
                     userImage: Converter.convertToImage(peer?.image, size: 35),
                   ),
                   Flexible(
                     child: Material(
-                        color: isMe && activityLog is TextActivity ? primaryColor : Theme.of(context).cardColor,
+                        color: isMe && activityLog is TextActivity
+                            ? primaryColor
+                            : Theme.of(context).cardColor,
                         borderRadius: BorderRadius.only(
-                          topLeft: (isMe) || (!isMe && isLastMessageLeft(index + 2)) ? corner : flat,
-                          topRight: (isMe && isLastMessageRight(index + 2)) || (!isMe) ? corner : flat,
-                          bottomRight: isMe && isLastMessageRight(index) || (!isMe) ? corner : flat,
-                          bottomLeft: isMe || (!isMe && isLastMessageLeft(index) && index == i) ? corner : flat,
+                          topLeft:
+                              (isMe) || (!isMe && isLastMessageLeft(index + 2))
+                                  ? corner
+                                  : flat,
+                          topRight:
+                              (isMe && isLastMessageRight(index + 2)) || (!isMe)
+                                  ? corner
+                                  : flat,
+                          bottomRight:
+                              isMe && isLastMessageRight(index) || (!isMe)
+                                  ? corner
+                                  : flat,
+                          bottomLeft: isMe ||
+                                  (!isMe &&
+                                      isLastMessageLeft(index) &&
+                                      index == i)
+                              ? corner
+                              : flat,
                         ),
                         elevation: 1,
                         clipBehavior: Clip.hardEdge,
@@ -95,7 +115,9 @@ class ChatActivityWidget extends StatelessWidget {
                               ? Icons.check_circle_rounded
                               : Icons.check_circle,
                       size: 12,
-                      color: activityLog.seenStatus < SeenStatus.Seen ? primaryColor : Colors.transparent,
+                      color: activityLog.seenStatus < SeenStatus.Seen
+                          ? primaryColor
+                          : Colors.transparent,
                     )
                 ])),
         // if (isMe)
@@ -105,8 +127,12 @@ class ChatActivityWidget extends StatelessWidget {
         if (!isMe && isLastMessageLeft(index))
           Container(
             child: Text(
-              DateFormat('dd MMM kk:mm').format((activityLog.timestamp).toDate()),
-              style: TextStyle(color: Colors.black, fontSize: 12.0, fontStyle: FontStyle.italic),
+              DateFormat('dd MMM kk:mm')
+                  .format((activityLog.timestamp).toDate()),
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 12.0,
+                  fontStyle: FontStyle.italic),
             ),
             margin: EdgeInsets.only(left: 5.0, top: 5.0, bottom: 5.0),
           )
@@ -115,7 +141,10 @@ class ChatActivityWidget extends StatelessWidget {
   }
 
   bool isLastMessageLeft(int index) {
-    if ((index > 0 && listMessage != null && listMessage[min(index, listMessage.length) - 1].userId == this.userId) ||
+    if ((index > 0 &&
+            listMessage != null &&
+            listMessage[min(index, listMessage.length) - 1].userId ==
+                this.userId) ||
         index == 0) {
       return true;
     } else {
@@ -124,7 +153,10 @@ class ChatActivityWidget extends StatelessWidget {
   }
 
   bool isLastMessageRight(int index) {
-    if ((index > 0 && listMessage != null && listMessage[min(index, listMessage.length) - 1].userId != this.userId) ||
+    if ((index > 0 &&
+            listMessage != null &&
+            listMessage[min(index, listMessage.length) - 1].userId !=
+                this.userId) ||
         index == 0) {
       return true;
     } else {
@@ -140,7 +172,8 @@ class ChatActivityWidget extends StatelessWidget {
         loadingWidget: loadingWidget,
       );
     } else {
-      return TextActivityWidget(textActivity: activityLog as TextActivity, isMe: isMe);
+      return TextActivityWidget(
+          textActivity: activityLog as TextActivity, isMe: isMe);
     }
   }
 }

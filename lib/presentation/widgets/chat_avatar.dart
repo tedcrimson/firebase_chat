@@ -7,7 +7,14 @@ class ChatAvatar extends StatelessWidget {
   final Widget userImage;
   final double width;
   final double height;
-  const ChatAvatar({Key key, this.showAvatar, this.peer, this.userImage, this.width, this.height}) : super(key: key);
+  const ChatAvatar(
+      {Key key,
+      this.showAvatar,
+      this.peer,
+      this.userImage,
+      this.width,
+      this.height})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -14,7 +14,9 @@ class TypingWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         padding: EdgeInsets.only(left: 10.0, right: 10.0, bottom: 10.0),
-        child: Row(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.center,
+        child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             // mainAxisSize: MainAxisSize.min,
             children: <Widget>[
               //avatar
