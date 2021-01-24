@@ -27,15 +27,23 @@ class ImageActivityWidget extends StatelessWidget {
 
     return LayoutBuilder(builder: (context, constraints) {
       double imageMaxWidth = constraints.maxWidth * 2 / 3;
+      double imageMaxHeight = MediaQuery.of(context).size.height / 2;
       return GestureDetector(
         child: Hero(
             tag: item.id,
-            child: CachedNetworkImage(
-              imageUrl: item.thumbnail ?? item.url,
-              placeholder: (context, url) => loadingWidget,
-              // placeholderFadeInDuration: Duration(milliseconds: 50),
-              fit: BoxFit.fitHeight,
-              width: imageMaxWidth,
+            child: ConstrainedBox(
+              constraints: BoxConstraints(
+                maxWidth: imageMaxWidth,
+                maxHeight: imageMaxHeight,
+              ),
+              child: CachedNetworkImage(
+                imageUrl: item.thumbnail ?? item.url,
+                placeholder: (context, url) => loadingWidget,
+                // placeholderFadeInDuration: Duration(milliseconds: 50),
+                fit: BoxFit.cover,
+                // width: imageMaxWidth,
+                // height: imageMaxHeight,
+              ),
             )
             // child: FadeInImage(
             //   image: NetworkImage(item.thumbnail ?? item.url),

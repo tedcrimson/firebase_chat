@@ -5,8 +5,9 @@ class ChatAvatar extends StatelessWidget {
   final bool showAvatar;
   final PeerUser peer;
   final Widget userImage;
-  const ChatAvatar({Key key, this.showAvatar, this.peer, this.userImage})
-      : super(key: key);
+  final double width;
+  final double height;
+  const ChatAvatar({Key key, this.showAvatar, this.peer, this.userImage, this.width, this.height}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,8 +17,8 @@ class ChatAvatar extends StatelessWidget {
             ? ClipOval(
                 child: Container(
                     color: Colors.indigo,
-                    width: 40,
-                    height: 40,
+                    width: width ?? 35,
+                    height: height ?? 35,
                     child: peer?.image == null || peer.image.isEmpty
                         ? Center(
                             child: Text(
@@ -27,7 +28,7 @@ class ChatAvatar extends StatelessWidget {
                         : userImage),
               )
             : Container(
-                width: 40,
+                width: width ?? 35,
               ));
   }
 }

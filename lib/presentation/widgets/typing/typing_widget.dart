@@ -14,9 +14,7 @@ class TypingWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         padding: EdgeInsets.only(left: 10.0, right: 10.0, bottom: 10.0),
-        child: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.center,
+        child: Row(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.center,
             // mainAxisSize: MainAxisSize.min,
             children: <Widget>[
               //avatar
@@ -27,11 +25,12 @@ class TypingWidget extends StatelessWidget {
               ),
               Flexible(
                   child: Material(
+                      color: Theme.of(context).cardColor,
                       borderRadius: BorderRadius.all(Radius.circular(18.0)),
-                      elevation: 2,
+                      elevation: 1,
                       clipBehavior: Clip.hardEdge,
                       child: Container(
-                        padding: EdgeInsets.symmetric(horizontal: 10),
+                        padding: EdgeInsets.symmetric(horizontal: 4.0),
                         child: TypingAnimation(color),
                       )))
             ]));

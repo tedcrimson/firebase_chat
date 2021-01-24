@@ -1,6 +1,6 @@
 name: firebase_chat
 description: Fully functional package for Cloud Firestore that makes easier to implement chat in your application
-version: 0.0.2+8
+version: 0.0.3
 homepage: https://github.com/tedcrimson/firebase_chat
 
 environment:
@@ -11,15 +11,14 @@ dependencies:
   flutter:
     sdk: flutter
 
-  bloc: ^6.1.0  
-  flutter_bloc: ^6.1.0
+  bloc: ^6.1.1
+  flutter_bloc: ^6.1.1
   equatable: ^1.2.5
-  cached_network_image: ^2.3.3
+  cached_network_image: ^2.5.0
   http: ^0.12.2
   intl: ^0.16.1
-  cloud_firestore: ^0.14.2
-  firestore_repository: ^0.0.1+1
-  firebase_storage_repository: ^0.0.2+1
+  firestore_repository: ^0.0.1+2
+  firebase_storage_repository: ^0.0.2+3
     # path: ../firebase_storage_repository
   gallery_previewer: ^0.0.1+1
     # path: ../gallery_previewer
