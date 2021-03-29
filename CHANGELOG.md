@@ -1,3 +1,4 @@
+## [0.0.4] - updated outdated dependencies
 ## [0.0.3] - updated dependencies
 ## [0.0.2+8] - changed pagination
 ## [0.0.2+7] - changed readme

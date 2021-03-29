@@ -3,151 +3,139 @@
   "packages": [
     {
       "name": "archive",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/archive-2.0.13",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/archive-3.1.2",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
-    },
-    {
-      "name": "args",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/args-1.6.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.3"
+      "languageVersion": "2.12"
     },
     {
       "name": "async",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.4.2",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.5.0",
       "packageUri": "lib/",
-      "languageVersion": "2.2"
+      "languageVersion": "2.12"
     },
     {
       "name": "bloc",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/bloc-6.1.1",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/bloc-7.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.6"
+      "languageVersion": "2.12"
     },
     {
       "name": "cached_network_image",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/cached_network_image-2.5.0",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/cached_network_image-3.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "characters",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/characters-1.1.0-nullsafety.3",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/characters-1.1.0",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "charcode",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/charcode-1.1.3",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/charcode-1.2.0",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.12"
     },
     {
       "name": "clock",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/clock-1.0.1",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/clock-1.1.0",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.12"
     },
     {
       "name": "cloud_firestore",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-0.16.0",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-1.0.3",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.12"
     },
     {
       "name": "cloud_firestore_platform_interface",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore_platform_interface-3.0.1",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore_platform_interface-4.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.12"
     },
     {
       "name": "cloud_firestore_web",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore_web-0.3.0+1",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore_web-1.0.3",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.12"
     },
     {
       "name": "collection",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.15.0-nullsafety.3",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.15.0",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
-    },
-    {
-      "name": "convert",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/convert-2.1.1",
-      "packageUri": "lib/",
-      "languageVersion": "1.17"
+      "languageVersion": "2.12"
     },
     {
       "name": "crypto",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-2.1.5",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-3.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.3"
+      "languageVersion": "2.12"
     },
     {
       "name": "equatable",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/equatable-1.2.5",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/equatable-2.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.12"
     },
     {
       "name": "ffi",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/ffi-0.1.3",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/ffi-1.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.6"
+      "languageVersion": "2.12"
     },
     {
       "name": "file",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/file-5.2.1",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/file-6.1.0",
       "packageUri": "lib/",
-      "languageVersion": "2.2"
+      "languageVersion": "2.12"
     },
     {
       "name": "firebase_core",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.7.0",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-1.0.2",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.12"
     },
     {
       "name": "firebase_core_platform_interface",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_platform_interface-3.0.1",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_platform_interface-4.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.12"
     },
     {
       "name": "firebase_core_web",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-0.2.1+3",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-1.0.2",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.12"
     },
     {
       "name": "firebase_storage",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage-7.0.0",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage-8.0.1",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.12"
     },
     {
       "name": "firebase_storage_platform_interface",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage_platform_interface-1.0.4",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage_platform_interface-2.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.12"
     },
     {
       "name": "firebase_storage_repository",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage_repository-0.0.2+3",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage_repository-0.0.3",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     },
     {
       "name": "firebase_storage_web",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage_web-0.1.1+3",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage_web-1.0.2",
       "packageUri": "lib/",
-      "languageVersion": "2.7"
+      "languageVersion": "2.12"
     },
     {
       "name": "firestore_repository",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firestore_repository-0.0.1+2",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/firestore_repository-0.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     },
@@ -155,25 +143,25 @@
       "name": "flutter",
       "rootUri": "file:///Users/ted/Documents/Development/flutter/packages/flutter",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "flutter_bloc",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_bloc-6.1.1",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_bloc-7.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.6"
+      "languageVersion": "2.12"
     },
     {
       "name": "flutter_blurhash",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_blurhash-0.5.0",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_blurhash-0.6.0",
       "packageUri": "lib/",
-      "languageVersion": "2.4"
+      "languageVersion": "2.12"
     },
     {
       "name": "flutter_cache_manager",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_cache_manager-2.1.1",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_cache_manager-3.0.1",
       "packageUri": "lib/",
-      "languageVersion": "2.6"
+      "languageVersion": "2.12"
     },
     {
       "name": "flutter_pagewise",
@@ -185,247 +173,229 @@
       "name": "flutter_web_plugins",
       "rootUri": "file:///Users/ted/Documents/Development/flutter/packages/flutter_web_plugins",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.12"
     },
     {
       "name": "gallery_previewer",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/gallery_previewer-0.0.1+1",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/gallery_previewer-0.0.2+1",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     },
     {
       "name": "http",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.12.2",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.1",
       "packageUri": "lib/",
-      "languageVersion": "2.4"
+      "languageVersion": "2.12"
     },
     {
       "name": "http_parser",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-3.1.4",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.3"
+      "languageVersion": "2.12"
     },
     {
       "name": "image",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/image-2.1.19",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/image-3.0.2",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.12"
     },
     {
       "name": "intl",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/intl-0.16.1",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/intl-0.17.0",
       "packageUri": "lib/",
-      "languageVersion": "2.5"
+      "languageVersion": "2.12"
     },
     {
       "name": "js",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.2",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.3",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
-    },
-    {
-      "name": "matcher",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.9",
-      "packageUri": "lib/",
-      "languageVersion": "2.7"
+      "languageVersion": "2.12"
     },
     {
       "name": "meta",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.3.0-nullsafety.3",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.3.0",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "nested",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/nested-0.0.4",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/nested-1.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.2"
+      "languageVersion": "2.12"
     },
     {
       "name": "octo_image",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/octo_image-0.3.0",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/octo_image-1.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.7"
+      "languageVersion": "2.12"
     },
     {
       "name": "path",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.7.0",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.12"
     },
     {
       "name": "path_provider",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-1.6.27",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.1",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.12"
     },
     {
       "name": "path_provider_linux",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-0.0.1+2",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-2.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.12"
     },
     {
       "name": "path_provider_macos",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-0.0.4+8",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-2.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.12"
     },
     {
       "name": "path_provider_platform_interface",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_platform_interface-1.0.4",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_platform_interface-2.0.1",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.12"
     },
     {
       "name": "path_provider_windows",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-0.0.4+3",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-2.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.12"
     },
     {
       "name": "pedantic",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.9.2",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.11.0",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.12"
     },
     {
       "name": "petitparser",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/petitparser-3.1.0",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/petitparser-4.0.2",
       "packageUri": "lib/",
-      "languageVersion": "2.7"
+      "languageVersion": "2.12"
     },
     {
       "name": "photo_manager",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/photo_manager-0.5.8",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/photo_manager-1.0.6",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.12"
     },
     {
       "name": "photo_view",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/photo_view-0.10.3",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/photo_view-0.11.1",
       "packageUri": "lib/",
-      "languageVersion": "2.6"
+      "languageVersion": "2.12"
     },
     {
       "name": "platform",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/platform-2.2.1",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/platform-3.0.0",
       "packageUri": "lib/",
-      "languageVersion": "1.24"
+      "languageVersion": "2.12"
     },
     {
       "name": "plugin_platform_interface",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-1.0.3",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-2.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.12"
     },
     {
       "name": "process",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/process-3.0.13",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/process-4.2.1",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.12"
     },
     {
       "name": "provider",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/provider-4.3.3",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/provider-5.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.7"
-    },
-    {
-      "name": "quiver",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-2.1.5",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.12"
     },
     {
       "name": "rxdart",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/rxdart-0.25.0",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/rxdart-0.26.0",
       "packageUri": "lib/",
-      "languageVersion": "2.6"
+      "languageVersion": "2.12"
     },
     {
       "name": "sky_engine",
       "rootUri": "file:///Users/ted/Documents/Development/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
-      "languageVersion": "1.11"
+      "languageVersion": "2.12"
     },
     {
       "name": "source_span",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.7.0",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.8.1",
       "packageUri": "lib/",
-      "languageVersion": "2.6"
+      "languageVersion": "2.12"
     },
     {
       "name": "sqflite",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite-1.3.2+2",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite-2.0.0+3",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "sqflite_common",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite_common-1.0.3+1",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite_common-2.0.0+2",
       "packageUri": "lib/",
-      "languageVersion": "2.7"
-    },
-    {
-      "name": "stack_trace",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/stack_trace-1.9.6",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.12"
     },
     {
       "name": "string_scanner",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/string_scanner-1.0.5",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/string_scanner-1.1.0",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.12"
     },
     {
       "name": "synchronized",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/synchronized-2.2.0+2",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/synchronized-3.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.8"
+      "languageVersion": "2.12"
     },
     {
       "name": "term_glyph",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/term_glyph-1.1.0",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/term_glyph-1.2.0",
       "packageUri": "lib/",
-      "languageVersion": "1.8"
+      "languageVersion": "2.12"
     },
     {
       "name": "typed_data",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/typed_data-1.3.0-nullsafety.3",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/typed_data-1.3.0",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "uuid",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/uuid-2.2.2",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/uuid-3.0.3",
       "packageUri": "lib/",
-      "languageVersion": "2.2"
+      "languageVersion": "2.12"
     },
     {
       "name": "vector_math",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.1.0-nullsafety.3",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.1.0",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "win32",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/win32-1.7.4",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/win32-2.0.5",
       "packageUri": "lib/",
-      "languageVersion": "2.7"
+      "languageVersion": "2.12"
     },
     {
       "name": "xdg_directories",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/xdg_directories-0.1.2",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/xdg_directories-0.2.0",
       "packageUri": "lib/",
-      "languageVersion": "2.3"
+      "languageVersion": "2.12"
     },
     {
       "name": "xml",
-      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/xml-4.5.1",
+      "rootUri": "file:///Users/ted/Documents/Development/flutter/.pub-cache/hosted/pub.dartlang.org/xml-5.0.2",
       "packageUri": "lib/",
-      "languageVersion": "2.7"
+      "languageVersion": "2.12"
     },
     {
       "name": "firebase_chat",
@@ -434,7 +404,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-01-24T14:31:17.791259Z",
+  "generated": "2021-03-29T18:37:25.117606Z",
   "generator": "pub",
-  "generatorVersion": "2.10.3"
+  "generatorVersion": "2.12.2"
 }

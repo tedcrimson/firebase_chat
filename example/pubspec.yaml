@@ -25,11 +25,11 @@ dependencies:
     sdk: flutter
 
 
-  cloud_firestore: ^0.16.0
+  cloud_firestore: ^1.0.3
   # file_picker_web: ^2.0.0
   firebase_chat:
     path: ../
-  camera_capture: ^0.0.1
+  camera_capture: ^0.0.2
   draw_page: ^0.0.2
 
 dev_dependencies:

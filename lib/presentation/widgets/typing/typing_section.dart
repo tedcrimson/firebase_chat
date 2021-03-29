@@ -20,7 +20,7 @@ class TypingSection extends StatefulWidget {
 }
 
 class _TypingSectionState extends State<TypingSection> {
-  List<String> typingPeers = List<String>();
+  List<String> typingPeers = [];
   StreamSubscription _typingSubscription;
 
   @override

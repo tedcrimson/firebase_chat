@@ -74,7 +74,7 @@ abstract class BaseChatState<T extends BaseChat> extends State<BaseChat> {
     query = fire.getQuery([...entity.path.split('/'), 'Activity'],
         limit: messageLimit).orderBy('timestamp', descending: true);
 
-    images = new List<GalleryViewItem>();
+    images = [];
 
     _imagesSubscription = activityRepository
         .getChatImages(activityRepository.reference)
@@ -198,7 +198,7 @@ abstract class BaseChatState<T extends BaseChat> extends State<BaseChat> {
 
   Widget _buildInput() {
     return BlocBuilder<ChatInputCubit, ChatInputState>(
-        cubit: _chatInputCubit, builder: inputBuilder);
+        bloc: _chatInputCubit, builder: inputBuilder);
   }
 
   Widget inputBuilder(BuildContext context, ChatInputState state);
