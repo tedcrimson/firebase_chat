@@ -7,7 +7,7 @@ class PeerUser {
 
   PeerUser({this.id, this.image, this.name});
 
-  factory PeerUser.fromSnapshot(DocumentSnapshot snap) {
+  factory PeerUser.fromSnapshot(DocumentSnapshot<Map<String, dynamic>>  snap) {
     var data = snap.data();
     return PeerUser(
         id: snap.id,

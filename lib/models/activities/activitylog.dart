@@ -27,7 +27,7 @@ class ActivityLog {
   String path;
   String documentId;
 
-  ActivityLog.fromSnapshot(DocumentSnapshot snapshot) {
+  ActivityLog.fromSnapshot(DocumentSnapshot<Map<String, dynamic>> snapshot) {
     documentId = snapshot.id;
     var data = snapshot.data();
     userId = data['userId'];

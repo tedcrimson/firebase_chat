@@ -3,7 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 class TextActivity extends ActivityLog {
   String text;
-  TextActivity.fromSnapshot(DocumentSnapshot snap) : super.fromSnapshot(snap) {
+  TextActivity.fromSnapshot(DocumentSnapshot<Map<String, dynamic>>  snap) : super.fromSnapshot(snap) {
     text = snap.data()['text'];
   }
 

@@ -29,7 +29,7 @@ class ChatAvatar extends StatelessWidget {
                     child: peer?.image == null || peer.image.isEmpty
                         ? Center(
                             child: Text(
-                            peer.name[0],
+                              peer?.name?.isNotEmpty == true ? peer?.name[0] : '',
                             style: TextStyle(fontSize: 20, color: Colors.white),
                           ))
                         : userImage),

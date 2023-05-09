@@ -7,7 +7,7 @@ class ChatModel {
   final String title;
   ChatModel({this.users, this.path, this.lastMessageReference, this.title});
 
-  factory ChatModel.fromSnapshot(DocumentSnapshot snap) {
+  factory ChatModel.fromSnapshot(DocumentSnapshot<Map<String, dynamic>>  snap) {
     var data = snap.data();
     var users = List<String>.from(data['users']);
     return ChatModel(

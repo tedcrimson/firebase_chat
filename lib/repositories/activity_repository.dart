@@ -19,7 +19,7 @@ class ActivityRepository {
   final FirestoreRepository _firestoreRepository;
   final FirebaseStorageRepository _storageRepository;
 
-  DocumentReference get reference => _firestoreRepository.doc(path);
+  DocumentReference<Map<String, dynamic>> get reference => _firestoreRepository.doc(path);
 
   DocumentReference createActivityReference() {
     return reference.collection('Activity').doc();
@@ -49,7 +49,7 @@ class ActivityRepository {
     if (path != null)
       return _firestoreRepository.firestore.runTransaction((transaction) async {
         var documentReference = _firestoreRepository.doc(path);
-        DocumentSnapshot txSnapshot = await transaction.get(documentReference);
+        DocumentSnapshot<Map<String, dynamic>> txSnapshot = await transaction.get(documentReference);
         if (!txSnapshot.exists) return;
         var map = txSnapshot.data();
         if (userId != null) {

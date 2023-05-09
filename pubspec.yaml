@@ -11,18 +11,23 @@ dependencies:
   flutter:
     sdk: flutter
 
-  bloc: ^7.0.0
-  flutter_bloc: ^7.0.0
-  equatable: ^2.0.0
-  cloud_firestore: ^1.0.3
-  cached_network_image: ^3.0.0
-  http: ^0.13.1
+  bloc: ^8.1.1
+  flutter_bloc: ^8.1.2
+  equatable: ^2.0.5
+  cloud_firestore: ^4.6.0
+  cached_network_image: ^3.2.3
+  http: ^0.13.6
   intl: ^0.17.0
-  firestore_repository: ^0.0.2
-  firebase_storage_repository: ^0.0.2+1
+  firestore_repository: ^0.0.4
+  firebase_storage_repository: ^0.0.4
     # path: ../firebase_storage_repository
-  gallery_previewer: ^0.0.2+1
+  gallery_previewer: ^0.0.4
     # path: ../gallery_previewer
     # git:
     #   url: git@github.com:tedcrimson/packages.git
     #   path: gallery_previewer
+
+dependency_overrides:
+  firebase_core: ^2.11.0
+  firebase_storage: ^11.1.2
+  cloud_firestore: ^4.6.0

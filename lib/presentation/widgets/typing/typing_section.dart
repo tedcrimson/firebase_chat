@@ -55,7 +55,7 @@ class _TypingSectionState extends State<TypingSection> {
     return Column(
       children: typingPeers
           .map(
-            (e) => widget.peers[e].id == widget.userId
+            (e) => widget.peers[e]?.id == widget.userId
                 ? SizedBox()
                 : TypingWidget(
                     widget.peers[e],
