@@ -18,9 +18,7 @@ dependencies:
   cached_network_image: ^3.2.3
   http: ^0.13.6
   intl: ^0.17.0
-  firestore_repository: ^0.0.4
-  firebase_storage_repository: ^0.0.4
-    # path: ../firebase_storage_repository
+  dependencies:
   gallery_previewer: ^0.0.4
     # path: ../gallery_previewer
     # git:

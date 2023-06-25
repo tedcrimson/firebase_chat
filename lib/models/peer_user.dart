@@ -1,4 +1,4 @@
-import 'package:firestore_repository/firestore_repository.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class PeerUser {
   final String id;
@@ -7,7 +7,7 @@ class PeerUser {
 
   PeerUser({this.id, this.image, this.name});
 
-  factory PeerUser.fromSnapshot(DocumentSnapshot<Map<String, dynamic>>  snap) {
+  factory PeerUser.fromSnapshot(DocumentSnapshot<Map<String, dynamic>> snap) {
     var data = snap.data();
     return PeerUser(
         id: snap.id,

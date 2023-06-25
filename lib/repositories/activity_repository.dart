@@ -2,8 +2,8 @@ import 'dart:io' as io;
 import 'dart:typed_data';
 
 import 'package:firebase_chat/models.dart';
-import 'package:firebase_storage_repository/firebase_storage_repository.dart';
-import 'package:firestore_repository/firestore_repository.dart';
+import 'package:firebase_chat/models/firebase_storage_repository.dart';
+import 'package:firebase_chat/models/firestore_repository.dart';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 
@@ -19,7 +19,8 @@ class ActivityRepository {
   final FirestoreRepository _firestoreRepository;
   final FirebaseStorageRepository _storageRepository;
 
-  DocumentReference<Map<String, dynamic>> get reference => _firestoreRepository.doc(path);
+  DocumentReference<Map<String, dynamic>> get reference =>
+      _firestoreRepository.doc(path);
 
   DocumentReference createActivityReference() {
     return reference.collection('Activity').doc();
@@ -49,7 +50,8 @@ class ActivityRepository {
     if (path != null)
       return _firestoreRepository.firestore.runTransaction((transaction) async {
         var documentReference = _firestoreRepository.doc(path);
-        DocumentSnapshot<Map<String, dynamic>> txSnapshot = await transaction.get(documentReference);
+        DocumentSnapshot<Map<String, dynamic>> txSnapshot =
+            await transaction.get(documentReference);
         if (!txSnapshot.exists) return;
         var map = txSnapshot.data();
         if (userId != null) {

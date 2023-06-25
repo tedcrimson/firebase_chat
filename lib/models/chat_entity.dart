@@ -1,8 +1,7 @@
 import 'package:firebase_chat/firebase_chat.dart';
-import 'package:firebase_chat/models/activities/activitylog.dart';
 
 class ChatEntity {
-  final PeerUser mainUser; //TODO: change name
+  final PeerUser mainUser;
   final Map<String, PeerUser> peers;
   final ActivityLog lastMessage;
   final String path;

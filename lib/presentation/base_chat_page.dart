@@ -1,12 +1,12 @@
 import 'dart:async';
 
-import 'dart:typed_data';
 import 'package:firebase_chat/cubit/chat_input_cubit.dart';
 import 'package:firebase_chat/models.dart';
+import 'package:firebase_chat/models/firestore_repository.dart';
+import 'package:firebase_chat/pagination/pagination.dart';
 import 'package:firebase_chat/presentation/widgets/chat_content.dart';
 import 'package:firebase_chat/presentation/widgets/typing/typing_section.dart';
 import 'package:firebase_chat/repositories/activity_repository.dart';
-import 'package:firestore_repository/firestore_repository.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gallery_previewer/gallery_previewer.dart';

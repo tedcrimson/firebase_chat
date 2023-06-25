@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/services.dart';
 
-import 'dart:typed_data';
 import 'package:draw_page/draw_page.dart';
 import 'package:flutter/foundation.dart';
 import 'package:camera_capture/camera_capture.dart';
